@@ -76,7 +76,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="mailto:email.anda@gmail.com"
+              href="mailto:sukmanabila93@gmail.com"
               className="block w-full text-center mt-4 px-4 py-2 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
             >
               Hubungi Saya

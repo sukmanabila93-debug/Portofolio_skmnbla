@@ -1,12 +1,12 @@
 // src/app/page.tsx
-import { projects, skills } from "@/src/data/portofolio"; // Pastikan path import sesuai
+import { projects, skills } from "@/src/data/portofolio"; 
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 font-sans relative overflow-hidden z-0">
-      
+<main className="min-h-screen bg-slate-50 text-slate-900 font-sans relative overflow-x-hidden z-0">
+        
       {/* ========================================= */}
       {/* ANIMASI LATAR BELAKANG (AURORA GLOW)      */}
       {/* ========================================= */}
@@ -85,15 +85,13 @@ export default function Home() {
       {/* ========================================= */}
       <section id="experience" className="max-w-5xl mx-auto px-6 py-20 border-t border-slate-200/60 relative">
         <h3 className="text-3xl font-bold mb-2 text-slate-900">Pendidikan & Pengalaman</h3>
-        <p className="text-slate-600 mb-12">Latar belakang akademis dan rekam jejak organisasi saya.</p>
+        <p className="text-slate-600 mb-12">Latar belakang akademis, pelatihan, dan rekam jejak organisasi saya.</p>
 
         <div className="relative border-l-2 border-blue-200 ml-3 md:ml-6 space-y-12">
           
           {/* Item Timeline 1: Pendidikan */}
           <div className="relative pl-8 md:pl-10 group">
-            {/* Lingkaran Indikator */}
             <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-4 border-blue-500 group-hover:scale-125 group-hover:border-indigo-500 transition-all duration-300"></div>
-            
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
               <h4 className="text-xl font-bold text-slate-800">Institut Pendidikan Indonesia (IPI) Garut</h4>
               <span className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full mt-2 sm:mt-0 w-max">
@@ -109,11 +107,10 @@ export default function Home() {
           {/* Item Timeline 2: Penelitian */}
           <div className="relative pl-8 md:pl-10 group">
             <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-4 border-blue-500 group-hover:scale-125 group-hover:border-indigo-500 transition-all duration-300"></div>
-            
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
               <h4 className="text-xl font-bold text-slate-800">Peneliti Independen / Proyek Akademik</h4>
               <span className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full mt-2 sm:mt-0 w-max">
-                2025 - 2026
+                Sekarang
               </span>
             </div>
             <p className="text-indigo-600 font-medium mb-3">Riset & Analisis Sistem</p>
@@ -122,19 +119,48 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Item Timeline 3: Organisasi */}
+          {/* Item Timeline 3: HIMASIFOR */}
           <div className="relative pl-8 md:pl-10 group">
             <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-4 border-slate-300 group-hover:scale-125 group-hover:border-indigo-500 transition-all duration-300"></div>
-            
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-              <h4 className="text-xl font-bold text-slate-800">BEM Fakultas Ilmu Terapan dan Sains</h4>
+              <h4 className="text-xl font-bold text-slate-800">Himpunan Mahasiswa Sistem Informasi</h4>
               <span className="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-2 sm:mt-0 w-max">
-                2025 - 2026
+                2024 - 2025
               </span>
             </div>
-            <p className="text-indigo-600 font-medium mb-3">Sekretaris II</p>
+            <p className="text-indigo-600 font-medium mb-3">Anggota Departemen Kaderisasi</p>
             <p className="text-slate-600 leading-relaxed">
-              Bertanggung jawab atas pengelolaan administrasi organisasi, pengarsipan dokumen, dan koordinasi komunikasi antar divisi untuk mendukung kelancaran program kerja mahasiswa.
+              Berperan aktif dalam merancang dan melaksanakan program pembinaan mahasiswa baru, membangun karakter kepemimpinan, serta memfasilitasi kegiatan orientasi dan regenerasi di lingkungan prodi.
+            </p>
+          </div>
+
+          {/* Item Timeline 4: Game Jam */}
+          <div className="relative pl-8 md:pl-10 group">
+            <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-4 border-slate-300 group-hover:scale-125 group-hover:border-indigo-500 transition-all duration-300"></div>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h4 className="text-xl font-bold text-slate-800">Garut Global Game Jam</h4>
+              <span className="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-2 sm:mt-0 w-max">
+                2026
+              </span>
+            </div>
+            <p className="text-indigo-600 font-medium mb-3">Panitia & Developer</p>
+            <p className="text-slate-600 leading-relaxed">
+              Berkolaborasi dalam tim untuk merancang, mengembangkan, dan mempresentasikan prototipe produk digital fungsional dalam waktu singkat (48 jam). Mengasah kemampuan pemecahan masalah (<i>problem-solving</i>) dan manajemen waktu di bawah tekanan.
+            </p>
+          </div>
+
+          {/* Item Timeline 5: Dicoding */}
+          <div className="relative pl-8 md:pl-10 group">
+            <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-4 border-slate-300 group-hover:scale-125 group-hover:border-indigo-500 transition-all duration-300"></div>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h4 className="text-xl font-bold text-slate-800">Dicoding Indonesia</h4>
+              <span className="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-2 sm:mt-0 w-max">
+                Pelatihan & Sertifikasi
+              </span>
+            </div>
+            <p className="text-indigo-600 font-medium mb-3">Pelatihan Pemrograman JavaScript</p>
+            <p className="text-slate-600 leading-relaxed">
+              Mengikuti dan menyelesaikan kelas fundamental pemrograman. Fokus pada pendalaman logika dan sintaks <strong>JavaScript</strong>, manipulasi tipe data, struktur data kompleks seperti <strong>Array</strong> dan <strong>Object</strong>, pemecahan masalah (<i>logic & control flow</i>), serta mengimplementasikannya dalam proyek teknis mandiri.
             </p>
           </div>
 
